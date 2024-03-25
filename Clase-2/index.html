@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h1>Video - Audio</h1>
+
+    <section>
+        <!-- <audio src=""></audio> -->
+        <video src="./videos/video2.mp4" controls >
+
+        </video>
+    </section>
+    <section>
+        <div class="contenedor">
+            <video id="video2"  poster="../Clase-1/imagenes/img-card.jpg" >
+                    <source src="./videos/video2.mp4" type="video/mp4"/>
+                    <source src="./videos/video2.ogv" type="video/ogv"/>
+            </video>
+
+            <div class="barra">
+                <div class="botonera">
+                    <button onclick="reproducir()">PLAY</button>
+                    <button onclick="pausar(event)">PAUSE</button>   
+                    <button onclick="mutear(event)">MUTEAR</button>         
+                </div>
+                    <p>
+                    <span class="actual">00:00</span>/
+                    <span class="duracion">00:00</span>
+                    </p>
+            </div>            
+        </div>
+
+
+
+    </section>
+
+    <button onmouseover="mostrarDuracion()">saber duracion</button>
+    <script src="./video.js"></script>
+</body>
+</html>
+<!--
+
+    autoplay -> se reproduce apenas se carga
+    loop -> reproduce constantemente
+    poster -> imagen antes de iniciar su reproduccion
+-->

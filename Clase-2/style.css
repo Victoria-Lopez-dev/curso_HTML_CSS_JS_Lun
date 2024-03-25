@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    margin-bottom: 20px;
+    background-color:  #f89fbe;
+    border: 2px solid darkblue;
+    width: 80%;
+    padding: 30px;
+}
+.contenedor{
+    width: 500px;
+    border: 2px solid blue;
+    background-color: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+video{
+   width: 100%;
+}
+.barra{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 100%;
+}
+.botonera{
+    display: flex;
+    gap: 20px;
+}
+.botonera> button{
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px red;
+}
+.botonera> button:active{
+    transform:translate(5px,5px);
+    box-shadow: none;
+}
+/*
+translate -> transform 
+pseudoclases -> cambios de estilo mientras el usuario realiza una accion 
+:hover -> paso el mouse por encima
+:active -> pulsando un elemento(mouse)
+:change-> cambia un valor
+:focus -> cuando hago foco en un valor
+...
+*/

@@ -1,0 +1,58 @@
+/* Comentarios */
+
+/* Selectores -> etiqueta - class(clases)(.) -id(manera unica - no se puede repetir el nombre asignado en todo el HTML)(#) - relacion 
+
+selector {
+    propiedad:valor,
+    propiedad:valor
+}
+*/
+h1{
+    /* margin (margin-left...)- padding(padding-top..) - border 
+    px - % - vw vh - em - rem
+    */
+    padding:10px  30px 20px 50px;
+    /*
+        1 valor - en los 4 extremos
+        2 valores 1ero arriba-abajo | 2do para los costados
+        4 valores 1 por cada extremo iniciando con arriba y continuando en sentido horario
+    */
+    margin: 40px;
+    background-color: lightseagreen;
+    font-size: 94px;
+}
+
+p{
+    color: red;
+    border: black double 4px ;
+    border-radius: 10px;
+    /* border-color: black;
+    border-width: 4px;
+    border-style: double; */
+}
+/* .itemLista{
+    color: darkmagenta;
+} */
+
+.itemLista > li{
+    color: darkmagenta;
+}
+.ubicacion{
+    display: flex;
+    gap: 20px;
+}
+#item1{
+    color: green;
+}
+
+/* > + ˜ */
+
+.contenedor>button{
+    background-color: rgb(100,25,44);
+}
+
+#item1+li{
+    background-color: #F905EE;
+}
+
+/* azul, rojo ,verde */

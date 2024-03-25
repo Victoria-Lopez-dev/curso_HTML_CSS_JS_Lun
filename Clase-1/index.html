@@ -1,0 +1,78 @@
+<!-- HTML -> etiquetas -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Clase 1 </title>
+    <!-- <script src="./script.js" defer></script> alternativa -->
+</head>
+<body>
+
+    <nav >
+        <ul class="itemLista ubicacion">
+            <!-- <li>
+                <a class="itemLista"  href="#">Nosotros</a>
+            </li> -->
+            <li >Contacto</li>
+            <li >Productos</li>
+        </ul>        
+    </nav>
+
+    <!-- semanticas - funcionales - estructurales -->
+    <!-- titulares : <h1>,<h2>,,,<h6> -->
+    <h1>Repaso HTML CSS JS</h1>
+    <h2>Subtitulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum?.Oracion nro 2.....
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum?.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum?
+    </p>
+    <!-- cuidado con la etiqueta <br>-->
+    <!-- listas : ordenadas(organice list - ol) o desordenadas (unorganice list - ul)-->
+    <!-- todas las listas tienen como hijo directo item de lista (li)-->
+    <ul>
+        <li class="itemLista">Item</li>
+        <li>Item</li>
+        <li class="itemLista">Item</li>
+    </ul>
+
+    <ol class="ubicacion">
+        <li id="item1">Item</li>
+        <li>Item</li>
+    </ol>
+
+    <!-- anclas (anchor) atributo href(indicar cuando se clickee a que destino tenemos que redirigir):  link-->
+    <a href="https://www.google.com/" class="itemLista">Ir a google</a>
+    <a href="./hojaSecundaria.html">ir a otra hoja HTML</a>
+
+
+    <button>Click</button>
+
+    <img src="./imagenes/img-card.jpg" alt="fondo floral"/>
+
+
+    <!-- contenedores : <div> <span> -->
+
+        <div class="contenedor ubicacion">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui?</p>
+            <button>Click</button>
+            <h2>Subtitulo</h2>
+        </div>
+    <!--landmarks - etiquetas de maquetacion : son div pero que el nombre de dicha etiqueta representa el area que engloba  .Etiquetas de apertura y cierre y puedo colocar cualquier propiedad que utilice en div
+    <nav> -> navegacion del sitio (menu)
+    <main> -> englobe el area principal del html
+    <section> -> seccion del sitio
+    <footer> -> pie de pagina 
+    <article>
+    <aside>
+    -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
+<!-- html:5 + enter|tab -  !+ enter|tab  
+atributos -> informacion extra de las etiquetas -->
+<!-- accesibilidad -> lectores de pantallas | screen readers -->
