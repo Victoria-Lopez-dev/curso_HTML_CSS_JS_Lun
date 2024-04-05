@@ -82,8 +82,11 @@ li{
 /*--------------------------------------------------------------------*/
 
 .titulo2{
-    background-color: royalblue;
+    background-color: white;
     width: fit-content;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px red;
 }
 .img-fondo{
     background-image: url(./img-card.jpg);
@@ -92,7 +95,8 @@ li{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+
 }
 
 
