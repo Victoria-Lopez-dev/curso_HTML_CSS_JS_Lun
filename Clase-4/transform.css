@@ -1,0 +1,68 @@
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    perspective:800px;
+    /*defino una perspectiva -> unidad distancia (px)*/
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+/* .translate{
+    transform: translate(200px,100px);/*translate(x,y);*/
+    /* translate -> mueve al elemento en los ejes
+} */
+.translate:hover{
+    transition: transform 3s;
+    transform: translate(200px,100px); 
+   /*  transform:  translateZ(300px);*/
+    background-color: bisque;
+}
+.rotate{
+    background-image: url(./imagenes/img-card.jpg);
+    background-size: cover;
+    transform: rotate(-45deg);/* unidad grados -> deg(degree)*/
+    transition: transform 5s;
+}
+
+.girar{
+   
+    transform: rotate(45deg);
+}
+
+.scale:active{
+    transform: scaleX(2) scaleY(0.5);
+    /* numeros sin unidad
+    scale(2,.5)*/
+}
+
+.skew{
+    transform: skewY(25deg) translate(-200px);
+    background-color: chartreuse;
+    /*unidades grados (deg)*/
+}
+
+.combo{
+    background-color: coral;
+    transform: rotateY(40deg) ;
+}
+
+.rotar3D{
+    transform:rotateY(40deg) rotateZ(-30deg) ;
+}
+/* transform -> transforma el elemento 
+-apenas inicia la reproduccion del sitio
+-cuando el usuario realiza acciones : pseudoclases(CSS) , eventos(JS)*/
+
+/* transition -> progresivo los cambios 
+ transition: propiedad/es tiempo;
+ tiempo -> segundos - milisegundos : s -ms
+ si lo coloco en la clase inicial del elemento aplica esa transicion en ambas direcciones sino solo cuando se agrega la clase o se realiza la pseudoclase
+*/
+
+/* perspectiva -> en el contenedor padre donde defino un "horizonte" asi empezar a poder utilizar el tercer eje (Z) que le da profundidad */

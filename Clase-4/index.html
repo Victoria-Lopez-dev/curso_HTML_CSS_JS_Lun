@@ -7,18 +7,27 @@
     <title>Clase - 4</title>
 </head>
 <body>
-    <h1> Transfor - Transition</h1>
+    <h1> Transform - Transition</h1>
 
     <div class="padre">
-        <input type="checkbox"  id="checkbox">
-        <div class="cubo translate">Translate</div>
-        <div class="cubo rotate" >Rotate</div>
-        <div class="cubo scale">Scale</div>
-        <div class="cubo skew">Skew</div>
-        <div class="cubo combo" >Combinado</div>
+        <div class="cubo translate">
+            <p>Translate</p>
+        </div>
+        <div class="cubo rotate" >
+            <p>Rotate</p>
+        </div>
+        <div class="cubo scale">
+            <p>Scale</p>
+        </div>
+        <div class="cubo skew">
+            <p>Skew</p>
+        </div>
+        <div class="cubo combo" onmouseover="rotarBis()">
+            <p>transformacion 3D</p>
+        </div>
         
     </div>
-
+    <button onclick="girar()">girar</button>
     <script src="./script.js"></script>
 </body>
 </html>

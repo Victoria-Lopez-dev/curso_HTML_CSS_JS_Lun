@@ -1,0 +1,61 @@
+.padre{
+    border: 2px solid green;
+    width: 600px;
+    perspective: 800px;
+}
+
+.cubo{
+    background-color: darkorchid;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    animation: moverCubo 5s 3 alternate forwards;
+}
+h2{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: mover 3s cubic-bezier(1,.04,0,.99) 2 ; */
+    animation-name:mover ;/*que animacion ejecutar*/
+    animation-duration:3s ;/* cuanto tiempo dura la animacion*/
+    animation-iteration-count: 2;
+    /* cuantas veces ejecutamos la animacion : numero sin unidad o "infinite"*/
+    animation-timing-function: cubic-bezier(1,.04,0,.99);
+    /* se encarga de la velocidad de la animacion*/
+    /*animation-direction -> la direccion de la animacion si lo hace en un sentido o en ambos*/
+
+}
+/*animacion -> cuadro a cuadro (animation)
+@keyframes nombre{ los cuadros de la animacion}
+forma de definir los cuadros:
+- from/ to
+
+- porcentajes 
+*/
+
+@keyframes mover {
+    from{
+        color: lightskyblue;
+        transform: translateX(200px);
+    }
+    to{
+        transform: translate(100px,100px) rotate(45deg);
+        color: darkgoldenrod;
+        font-size: 20px;
+    }
+}
+/* 10s -> 0s, 3.3s 4.5s*/
+
+@keyframes moverCubo {
+    0%{
+        background-color: crimson;
+        transform: scale(.5) translate(100px);
+    }
+    33%{
+        transform: rotateY(45deg) translate(100px);
+
+    }
+    100%{
+        border-radius: 10px;
+        background-color: greenyellow;
+        transform: translateX(100px) translateY(200px) translateZ(100px);
+    }
+}
