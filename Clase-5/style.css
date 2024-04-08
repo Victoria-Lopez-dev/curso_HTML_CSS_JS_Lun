@@ -1,0 +1,26 @@
+
+svg{ 
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+#rect1{
+    animation: mover 4s 3;
+}
+
+
+@keyframes mover {
+    0%{
+        transform: translateY(-200px);
+        fill:#333333
+    }
+    50%{
+        fill:green
+    }
+    100%{
+        transform: translateY(0px);
+        fill:rgb(96, 59, 3)
+    }
+    
+}

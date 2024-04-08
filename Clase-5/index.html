@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">   
+    <title>Clase - 5</title>
+</head>
+<body>
+    <h1>Usando SVG</h1>
+    <!-- <img src="./imagenes/fast-delivery.png" alt="Imagen formato pgn">
+    <img src="./imagenes/fondo1.jpeg" alt="Imagen formato  jpg"> -->
+    <img src="./imagenes/img.svg" alt="Imagen formato svg"> 
+   
+
+    <svg><!-- "lienzo" ,"pizarra" .En este caso 500x500-->
+        <rect y="200" x="100" width="100" height="200" stroke="red" fill="#F90" stroke-width="3" id="rect1"></rect>
+        <rect y="180" x="150" width="50" height="50" rx="10"></rect>
+        <circle cy="140" cx="440" r="90" fill="violet"></circle>
+        <ellipse cy="140" cx="440" ry="10" rx="80" stroke="blue" fill="none" stroke-width="5"></ellipse>
+
+        <polygon points="10 30,100 300,30 220,200 200" fill="gold" stroke="green" stroke-width="6"></polygon>
+        <polyline points="0 0,100 300,330 200" stroke="blue" fill="none" stroke-width="6"></polyline>
+        <line x1="160" y1="5" x2="260" y2="200" stroke="red" stroke-width="3"></line>
+
+    </svg>
+
+    <svg>
+        <circle  r="40" cx="200" cy="100" fill="pink"></circle>
+        <circle  r="40" cx="260" cy="100" fill="pink"></circle>
+        <polygon  points="162 115,225 200,298 115" fill="pink"></polygon>
+    </svg>
+    
+</body>
+</html>
+
+<!-- 
+    etiqueta <svg>
+    figuras primitivas :  rectangulo - circulo-elipse-lineas-poligonos
+
+    atributos etiquetas dentro de <svg>
+    <rect>
+    x e y -> atributos para indicar la coordenada de origen de la figura
+    fill -> relleno de la figura
+    stroke -> borde de la figura
+    rx -> borde redondeado
+
+    <circle>
+    r -> radio del circulo
+    cx e cy -> coordenada del centro de la circunferencia
+    stroke,stroke-width,fill
+
+    <ellipse>
+        mismos atributos quel circulo pero cambia el atributo "r" por "rx" y "ry"
+
+    <polygon>
+        fill,stroke,stroke-width,
+        points -> pares de coordenadas (x y, x y , xy,....)
+        cierra la figura
+    <line>
+    <polyline>
+        points -> a diferencia de polygon no cierra la figura
+    <line>
+        x1 e y1 ,x2 e y2
+
+        le podemos agregar animacion -> <animate> <animateMotion> <animateTransform>
+    -->
