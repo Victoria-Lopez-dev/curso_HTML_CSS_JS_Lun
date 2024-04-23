@@ -99,3 +99,9 @@ const funcionDrop2=(event)=>{
 // dragstart(elemento de arrastre - guardo en el dataTransfer)
 // - dragover(elemento destino)
 // - drop (elemento destino)
+
+
+// comentar algo...
+
+//comentar -> control+K y  control+C
+//descomentar -> control+K y control+U
